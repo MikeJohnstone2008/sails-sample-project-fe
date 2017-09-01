@@ -45,7 +45,7 @@
    $(function(){
 
     //code goes here
-
+    $(“#updateStudentForm” :input).prop (“disabled”, true);
    })
 
  })();

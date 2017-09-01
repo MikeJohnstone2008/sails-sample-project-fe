@@ -29,6 +29,26 @@
   $(function(){
 
   	//code goes here
+    $('#addStudentForm').validate({
+      errorClass: "text-danger",
+      rules: {
+        first_name: {
+          required: true,
+          minlength:  2,
+        },
+        last_name: {
+          required: true,
+          minlength:  2
+        },
+        start_date: {
+          required: true,
+          dateISO: true
+        }
+      },
+      messages: {
+        first_name: "Please enter a minimum of 2 characters for your first name"
+      }
+    })
 
   })
 
